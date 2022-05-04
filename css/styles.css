@@ -1,0 +1,153 @@
+/* Whole document CSS */
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Header section */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    padding: 15px 100px;
+    margin-bottom: 50px;
+}
+
+header > nav.top_menu {
+    display: flex;
+}
+
+header > nav.top_menu > h1 {
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/music-note.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-indent: -999px;
+    margin-right: 20px;
+}
+
+header > nav.top_menu > h1 > a {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+header > nav.top_menu > ul {
+    display: flex;
+    margin-left:120px;
+}
+
+header > nav.top_menu > ul > li {
+    font-size: 18px;
+    margin: 20px;
+}
+
+header > nav.top_menu > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Main section of the index page */
+main {
+    padding: 20px 125px 20px 125px;
+}
+
+main > div.albums_section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+main > div.albums_section > section.album_cover {
+    width: 33.33%;
+    flex-grow: 1;
+}
+
+main > div.albums_section > section.album_cover > article.album {
+    width: 300px;
+    height: 270px;
+    border: 1px solid black;
+    background-image: url(../images/sound.png), url(../images/like.png);
+    background-size: 65px 65px, 50px 50px;
+    background-position: 0px 65px, right top;
+    background-repeat: repeat-x, no-repeat;
+    line-height: 1.5;
+    padding-top: 170px;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+main > div.albums_section > section.album_cover > a {
+    color: black;
+}
+
+/*Main styles of Playlist page*/
+main > div.albums_section > section {
+    width: 33.33%;
+    flex-grow: 1;
+}
+main > div.albums_section > section.playlist_list {
+    width: 25%;
+    flex-grow: 1;
+}
+
+main > div.albums_section > section > article.playlist {
+    width: 280;
+    height: 360;
+}
+
+.playlist > h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.track {
+    width: 300px;
+    height: 65px;
+    background-image: url(../images/sound.png);
+    background-size: 65px 65px;
+    background-repeat: repeat-x;  
+    margin: 20px 45%;
+}
+
+.thanks_for_visiting {
+    text-align: center;
+}
+
+/* Footer of the website */
+footer {
+    height: 350px;
+    background-color: black;
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+footer > nav.bottom_menu {
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9vw;
+    margin: 0px 47vw;
+}
+
+footer > nav.bottom_menu > h1 {
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/music-note.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-indent: -1999rem;
+}
+
+footer > nav.bottom_menu > h1 > ul > li > a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    color: white;
+}
