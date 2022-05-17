@@ -8,56 +8,22 @@
 }
 
 /* Header section */
-header {
-    width: 100%;
-    height: 100px;
-    background-color: black;
-    padding: 15px 100px;
-    margin-bottom: 50px;
+.fa-stack {
+    font-size: 1.5em;
+    vertical-align: top;
 }
 
-header > nav.top_menu {
-    display: flex;
+.fa-stack.small .fa-message, .fa-heart {
+    transition: color ease-in 1s;
 }
 
-header > nav.top_menu > h1 {
-    width: 70px;
-    height: 70px;
-    background-image: url(../images/music-note.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    text-indent: -999px;
-    margin-right: 20px;
+.fa-stack.small:hover .fa-message {
+    color: red;
 }
 
-header > nav.top_menu > h1 > a {
-    display: block;
-    width: 100px;
-    height: 100px;
+.fa-stack.small:hover .fa-heart {
+    color: rgb(255, 255, 255);
 }
-
-header > nav.top_menu > ul {
-    display: flex;
-    margin-left:120px;
-}
-
-header > nav.top_menu > ul > li {
-    font-size: 18px;
-    margin: 20px;
-}
-
-header > nav.top_menu > ul > li > a {
-    text-decoration: none;
-    color: white;
-    background: linear-gradient(#1095c1 0 0) var(--p, 0) / var(--p, 0) no-repeat;
-    transition: .4s, background-position 0s;
-}
-
-header > nav.top_menu > ul > li > a:hover {
-    --p: 100%;
-    color: #fff;
-}
-
 /* Social icon-bar */
 .icon-bar {
     position: fixed;
@@ -106,155 +72,6 @@ header > nav.top_menu > ul > li > a:hover {
   }
 
 /* Main section of the index page */
-main {
-    padding: 20px 125px 20px 125px;
-}
 
-main > div.albums_section {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    transition: .5s;
-}
 
-main > div.albums_section:hover .sound_track {
-    filter: invert(50%);
-}
-
-main > div.albums_section > section.album_cover {
-    width: 33.33%;
-    flex-grow: 1;
-}
-
-main > div.albums_section > section.album_cover > article.album {
-    width: 300px;
-    height: 270px;
-    border: 1px solid black;
-    /* background-image: url(../images/sound.png), url(../images/like.png);
-    background-size: 65px 65px, 50px 50px;
-    background-position: 0px 65px, right top;
-    background-repeat: repeat-x, no-repeat; 
-    line-height: 1.5;
-    padding-top: 170px;
-    padding-left: 20px;
-    */
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.like_btn {
-    width: 65px;
-    height: 65px;
-    display: block;
-    margin-left: 77%;
-    background: linear-gradient(#00c3f3 0 0) var(--p, 0) / var(--p, 0) no-repeat;
-    transition: .5s, background-position 0s;
-}
-
-.like_btn:hover {
-    --p: 100%;
-    color: #fff;
-    filter: invert(100%);
-    cursor: pointer;
-}
-
-.sound_track {
-    display: inline-block;
-    width: 65px;
-    height: 65px;
-    margin-bottom: 15%;
-    transition: 1s;
-}
-
-.album h3{
-    margin: 10px;
-}
-
-.album span {
-    margin: 10px;
-}
-
-main > div.albums_section > section.album_cover > a {
-    color: black;
-}
-
-/*Main styles of Playlist page*/
-main > div.albums_section > section {
-    width: 33.33%;
-    flex-grow: 1;
-}
-main > div.albums_section > section.playlist_list {
-    width: 25%;
-    flex-grow: 1;
-}
-
-main > div.albums_section > section > article.playlist {
-    width: 280;
-    height: 360;
-}
-
-.playlist {
-    transition: .5s;
-}
-
-.playlist:hover ul{
-    background-color: gray;
-}
-
-.playlist > h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.track {
-    width: 300px;
-    height: 65px;
-    background-image: url(../images/sound.png);
-    background-size: 65px 65px;
-    background-repeat: repeat-x;  
-    margin: 100px 45%;
-}
-
-.thanks_for_visiting {
-    text-align: center;
-}
-
-/* Footer of the website */
-footer {
-    height: 350px;
-    background-color: black;
-    margin-top: 50px;
-    padding-top: 20px;
-}
-
-.bottom_menu {
-    width: 150px;
-    text-align: center;
-    font-size: 0.9vw;
-    margin: 0px 47vw;
-}
-
-.bottom_menu > h1 {
-    width: 150px;
-    height: 150px;
-    background-image: url(../images/music-note.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    text-indent: -1999rem;
-}
-
-.bottom_menu > h1 > a {
-    display: block;
-    width: 100px;
-    height: 100px;
-}
-
-.bottom_menu > h1 > ul > li > a {
-    display: block;
-    color: white;
-}
-
-.rights {
-    color: white;
-}
+/* Footer Section */
