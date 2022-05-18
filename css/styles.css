@@ -8,22 +8,59 @@
 }
 
 /* Header section */
-.fa-stack {
-    font-size: 1.5em;
-    vertical-align: top;
+
+/* Card Styles and Animation */
+@keyframes moving {
+  0% {top: 0px; left: 0px;}
+  100% {top: 0px; left: -65px;}
 }
 
-.fa-stack.small .fa-message, .fa-heart {
-    transition: color ease-in 1s;
+/* .moving {
+  position: relative;
+  animation-name: moving;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+} */
+
+.album-cover-card {
+  width: 33.33%;
+  transition: .3s;
 }
 
-.fa-stack.small:hover .fa-message {
-    color: red;
+.album-cover-card:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
-.fa-stack.small:hover .fa-heart {
-    color: rgb(255, 255, 255);
+.album-cover-card:hover .track-line > .moving {
+  position: relative;
+  animation-name: moving;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
+
+/* Like Button styles and animation */
+.like-btn {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: white;
+  font-size: 2em;
+  transition: color 0.5s, background-color 0.5s, border-color 0.5s;
+}
+
+.like-btn:hover {
+  color: white;
+  background-color: red;
+  border-color: red;
+}
+
+.like-btn:active {
+  fill: red;
+}
+
 /* Social icon-bar */
 .icon-bar {
     position: fixed;
@@ -71,7 +108,7 @@
     color: white;
   }
 
-/* Main section of the index page */
-
-
 /* Footer Section */
+footer .navbar .nav .nav-item .nav-link {
+  color: white;
+}
